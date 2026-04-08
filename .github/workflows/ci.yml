@@ -16,7 +16,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.parkumin }}
-          password: ${{ dckr_pat_ldENPHZS6GoUbeyDz8NIDk3XaMY }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       # 2. Docker 빌드 및 푸시 수행
       - name: Build and push
